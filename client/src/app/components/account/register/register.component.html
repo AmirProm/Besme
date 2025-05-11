@@ -1,1 +1,61 @@
 <p>register works!</p>
+<section>
+    <div class="item-1">
+        <form>
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input type="email" [formControl]="EmailCtrl" matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input type="text" [formControl]="NameCtrl" matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password" [formControl]="PasswordCtrl" matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Confirm Password</mat-label>
+                <input type="password" [formControl]="ConfirmPasswordCtrl" matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Age</mat-label>
+                <input type="number" [formControl]="AgeCtrl" matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Gender</mat-label>
+                <input type="text" [formControl]="GenderCtrl" matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>City</mat-label>
+                <input type="text" [formControl]="CityCtrl" matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Country</mat-label>
+                <input type="text" [formControl]="CountryCtrl" matInput>
+            </mat-form-field>
+
+            <button
+             routerLink="/members" 
+             (click)="register()" 
+             mat-flat-button 
+             color="parimary"
+             [disabled]="registerFg.invalid"
+             >
+             Register
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- <button (click)="login()" mat-stroked-button color="parimary">Login</button> -->
+
+<!-- <p>register works!</p>
+<button routerLink="/account/login">login</button> -->
