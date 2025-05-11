@@ -32,7 +32,7 @@ export class AccountService {
   
 
   getAllMember(): Observable<Member[]> {
-    return this.http.get<Member[]>(this._baseApiUrl + 'member');
+    return this.http.get<Member[]>(this._baseApiUrl + 'account');
   }
 
   setCurrentUser(loggedInUser: LoggedIn): void {
